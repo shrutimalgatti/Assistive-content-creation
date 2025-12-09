@@ -1,0 +1,816 @@
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:01:33
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'a car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text="A breathtaking, cinematic shot of a sleek, crimson red Ferrari speeding along a winding asphalt road. The road carves its way through the foothills of towering, snow-capped mountains under a clear, azure sky. The sun, positioned to the left of the frame, casts long, dramatic shadows, highlighting the car's aerodynamic curves and polished finish. Dust and small pebbles kick up from the tires, adding a sense of raw power and motion. The surrounding landscape is a vibrant mix of green meadows dotted with wildflowers and rugged, rocky terrain. In the distance, a small village nestles at the base of the mountains, adding scale and perspective. The image should evoke a sense of speed, freedom, and adventure. Use a shallow depth of field to keep the car in sharp focus while blurring the background slightly, emphasizing the velocity. Capture the glint of sunlight on the car's hood and the crisp details of the mountain peaks. Aim for photorealistic rendering with vivid colors and dynamic composition.\n")], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.2752728080749512, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=200, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=200)], prompt_token_count=1417, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1417)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1617, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a sleek, crimson red Ferrari speeding along a winding asphalt road. The road carves its way through the foothills of towering, snow-capped mountains under a clear, azure sky. The sun, positioned to the left of the frame, casts long, dramatic shadows, highlighting the car's aerodynamic curves and polished finish. Dust and small pebbles kick up from the tires, adding a sense of raw power and motion. The surrounding landscape is a vibrant mix of green meadows dotted with wildflowers and rugged, rocky terrain. In the distance, a small village nestles at the base of the mountains, adding scale and perspective. The image should evoke a sense of speed, freedom, and adventure. Use a shallow depth of field to keep the car in sharp focus while blurring the background slightly, emphasizing the velocity. Capture the glint of sunlight on the car's hood and the crisp details of the mountain peaks. Aim for photorealistic rendering with vivid colors and dynamic composition.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:05:43
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text='A breathtaking, dynamic shot of a high-speed car race carving through a winding mountain pass. The lead car, a sleek, futuristic hypercar with glowing neon underglow, drifts aggressively around a hairpin turn, kicking up a cloud of dust and gravel. Jagged, snow-capped peaks tower in the background, their majesty contrasting with the raw power of the race. The sky is a dramatic mix of fiery sunset hues and deep purples, casting long shadows across the asphalt. Other race cars, each with unique designs and vibrant color schemes, are visible in pursuit, their headlights piercing through the fading light. The road is lined with cheering spectators, blurred by motion, their faces illuminated by the flashing lights of the vehicles. Capture the feeling of adrenaline, speed, and the stunning beauty of the natural landscape. Focus on realistic textures: the grit of the road, the shine of the car paint, the roughness of the mountains, and the crispness of the air. Use a wide-angle lens to emphasize the scale of the environment and the speed of the cars. Add subtle motion blur to enhance the sense of velocity. Render in photorealistic detail, aiming for an 8K resolution.\n')], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.27582378387451173, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=240, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=240)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1656, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, dynamic shot of a high-speed car race carving through a winding mountain pass. The lead car, a sleek, futuristic hypercar with glowing neon underglow, drifts aggressively around a hairpin turn, kicking up a cloud of dust and gravel. Jagged, snow-capped peaks tower in the background, their majesty contrasting with the raw power of the race. The sky is a dramatic mix of fiery sunset hues and deep purples, casting long shadows across the asphalt. Other race cars, each with unique designs and vibrant color schemes, are visible in pursuit, their headlights piercing through the fading light. The road is lined with cheering spectators, blurred by motion, their faces illuminated by the flashing lights of the vehicles. Capture the feeling of adrenaline, speed, and the stunning beauty of the natural landscape. Focus on realistic textures: the grit of the road, the shine of the car paint, the roughness of the mountains, and the crispness of the air. Use a wide-angle lens to emphasize the scale of the environment and the speed of the cars. Add subtle motion blur to enhance the sense of velocity. Render in photorealistic detail, aiming for an 8K resolution.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:27:37
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text='A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon accents, is captured mid-drift, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their surfaces reflecting the warm hues of the setting sun. The sky is a vibrant gradient of orange, pink, and purple, with wisps of clouds adding depth and texture. Other race cars, slightly blurred to indicate speed, follow closely behind. The road surface is cracked and worn, adding a sense of realism and danger. Include motion blur on the wheels and dust particles to emphasize the speed and intensity of the race. The overall lighting should be dramatic, with long shadows stretching across the road and highlighting the contours of the mountains. Aim for a hyper-realistic style with exceptional detail, capturing the raw power and adrenaline of motorsports in a stunning natural setting.\n')], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.24255782058558514, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=194, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=194)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1610, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon accents, is captured mid-drift, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their surfaces reflecting the warm hues of the setting sun. The sky is a vibrant gradient of orange, pink, and purple, with wisps of clouds adding depth and texture. Other race cars, slightly blurred to indicate speed, follow closely behind. The road surface is cracked and worn, adding a sense of realism and danger. Include motion blur on the wheels and dust particles to emphasize the speed and intensity of the race. The overall lighting should be dramatic, with long shadows stretching across the road and highlighting the contours of the mountains. Aim for a hyper-realistic style with exceptional detail, capturing the raw power and adrenaline of motorsports in a stunning natural setting.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:31:43
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text="A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon underglow, drifts expertly around a hairpin turn, kicking up dust and small rocks. Jagged, snow-capped mountain peaks tower in the background, their slopes bathed in the warm, orange light of the setting sun. The sky is a vibrant gradient of orange, pink, and purple. Other race cars, slightly blurred to convey motion, follow closely behind. The road is asphalt, cracked and worn from years of racing. Include realistic details such as tire marks on the road, reflections of the sunset on the car's polished surface, and a sense of speed and adrenaline. The overall mood is exhilarating and awe-inspiring. Focus on dynamic composition and dramatic lighting to capture the intensity of the race and the beauty of the mountain landscape.\n")], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.2805915165468643, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=183, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=183)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1599, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon underglow, drifts expertly around a hairpin turn, kicking up dust and small rocks. Jagged, snow-capped mountain peaks tower in the background, their slopes bathed in the warm, orange light of the setting sun. The sky is a vibrant gradient of orange, pink, and purple. Other race cars, slightly blurred to convey motion, follow closely behind. The road is asphalt, cracked and worn from years of racing. Include realistic details such as tire marks on the road, reflections of the sunset on the car's polished surface, and a sense of speed and adrenaline. The overall mood is exhilarating and awe-inspiring. Focus on dynamic composition and dramatic lighting to capture the intensity of the race and the beauty of the mountain landscape.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:35:28
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text="A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon undercarriage, drifts expertly around a sharp bend, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their slopes bathed in the warm, orange light of the setting sun. The sky is a vibrant gradient of orange, pink, and purple, with wisps of high-altitude clouds. Other race cars, blurred by speed, follow closely behind, their headlights cutting through the growing twilight. The road surface is cracked and worn, adding to the sense of danger and excitement. Include motion blur to emphasize the speed. The overall atmosphere is one of adrenaline, freedom, and the raw power of machines against the majestic backdrop of nature. Render in a hyperrealistic style with extreme detail, capturing the texture of the asphalt, the reflections on the car's surface, and the intricate details of the mountain landscape.\n")], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.22620317047717525, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=204, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=204)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1620, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon undercarriage, drifts expertly around a sharp bend, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their slopes bathed in the warm, orange light of the setting sun. The sky is a vibrant gradient of orange, pink, and purple, with wisps of high-altitude clouds. Other race cars, blurred by speed, follow closely behind, their headlights cutting through the growing twilight. The road surface is cracked and worn, adding to the sense of danger and excitement. Include motion blur to emphasize the speed. The overall atmosphere is one of adrenaline, freedom, and the raw power of machines against the majestic backdrop of nature. Render in a hyperrealistic style with extreme detail, capturing the texture of the asphalt, the reflections on the car's surface, and the intricate details of the mountain landscape.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:39:02
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text='A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at sunset. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a hairpin turn, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their silhouettes painted with the warm hues of the setting sun – oranges, reds, and purples. The sky is a gradient of vibrant colors, transitioning from a fiery orange near the horizon to a deep violet higher up. Other race cars, slightly blurred to convey motion, follow closely behind, their headlights cutting through the gathering dusk. The road is a winding ribbon of asphalt, clinging to the mountainside. Include details such as skid marks on the road, spectators cheering from a designated viewing area on a nearby cliff, and a helicopter filming the race from above. Focus on capturing the speed, adrenaline, and the stunning natural beauty of the mountain landscape. Use dynamic lighting to highlight the cars and the environment, creating a sense of drama and excitement. Render in a hyperrealistic style with sharp details and vibrant colors.\n')], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.29986131456163195, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=225, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=225)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1641, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at sunset. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a hairpin turn, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their silhouettes painted with the warm hues of the setting sun – oranges, reds, and purples. The sky is a gradient of vibrant colors, transitioning from a fiery orange near the horizon to a deep violet higher up. Other race cars, slightly blurred to convey motion, follow closely behind, their headlights cutting through the gathering dusk. The road is a winding ribbon of asphalt, clinging to the mountainside. Include details such as skid marks on the road, spectators cheering from a designated viewing area on a nearby cliff, and a helicopter filming the race from above. Focus on capturing the speed, adrenaline, and the stunning natural beauty of the mountain landscape. Use dynamic lighting to highlight the cars and the environment, creating a sense of drama and excitement. Render in a hyperrealistic style with sharp details and vibrant colors.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:41:31
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text="A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at sunset. The lead car, a sleek, futuristic sports car with glowing neon underglow, drifts aggressively around a hairpin turn, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their silhouettes sharply defined against the vibrant hues of the setting sun. The sky is a gradient of fiery orange, deep purple, and soft pink, casting long shadows across the winding road. Other race cars, slightly blurred to convey motion, follow closely behind, their headlights cutting through the emerging twilight. The road surface is cracked and worn, adding a sense of realism and danger. Include details like skid marks on the asphalt, spectators cheering from the sidelines (blurred for distance), and a helicopter filming the race from above. Focus on dynamic composition, dramatic lighting, and a sense of speed and adrenaline. Aim for photorealistic rendering with a touch of stylized color grading to enhance the sunset's vibrancy.\n")], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.2621135333977123, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=202, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=202)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1618, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at sunset. The lead car, a sleek, futuristic sports car with glowing neon underglow, drifts aggressively around a hairpin turn, kicking up dust and gravel. Jagged, snow-capped mountain peaks tower in the background, their silhouettes sharply defined against the vibrant hues of the setting sun. The sky is a gradient of fiery orange, deep purple, and soft pink, casting long shadows across the winding road. Other race cars, slightly blurred to convey motion, follow closely behind, their headlights cutting through the emerging twilight. The road surface is cracked and worn, adding a sense of realism and danger. Include details like skid marks on the asphalt, spectators cheering from the sidelines (blurred for distance), and a helicopter filming the race from above. Focus on dynamic composition, dramatic lighting, and a sense of speed and adrenaline. Aim for photorealistic rendering with a touch of stylized color grading to enhance the sunset's vibrancy.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:43:26
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text='A breathtaking, dynamic shot of a high-speed car race winding through a mountain pass. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts around a sharp bend, kicking up dust and small rocks. Snow-capped peaks tower in the background, their jagged edges piercing a vibrant blue sky dotted with wispy clouds. The sun, positioned low in the sky, casts long, dramatic shadows across the winding asphalt road. Other race cars, blurred by speed, follow closely behind, their headlights cutting through the haze. The air crackles with energy, suggested by motion blur and heat distortion rising from the exhaust pipes. The overall mood is exhilarating and adventurous, capturing the thrill of high-stakes racing in a stunning natural environment. Focus on realistic textures for the cars (scratches, dirt, reflections), the road (cracks, gravel), and the mountains (snow, rock). Use a wide-angle lens to emphasize the scale of the landscape and the speed of the cars. Render in ultra-high resolution with cinematic lighting and a slight film grain effect.\n')], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.2973126844926314, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=220, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=220)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1636, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, dynamic shot of a high-speed car race winding through a mountain pass. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts around a sharp bend, kicking up dust and small rocks. Snow-capped peaks tower in the background, their jagged edges piercing a vibrant blue sky dotted with wispy clouds. The sun, positioned low in the sky, casts long, dramatic shadows across the winding asphalt road. Other race cars, blurred by speed, follow closely behind, their headlights cutting through the haze. The air crackles with energy, suggested by motion blur and heat distortion rising from the exhaust pipes. The overall mood is exhilarating and adventurous, capturing the thrill of high-stakes racing in a stunning natural environment. Focus on realistic textures for the cars (scratches, dirt, reflections), the road (cracks, gravel), and the mountains (snow, rock). Use a wide-angle lens to emphasize the scale of the landscape and the speed of the cars. Render in ultra-high resolution with cinematic lighting and a slight film grain effect.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:48:04
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'a car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text="A breathtaking, cinematic shot of a sleek, crimson red Ferrari SF90 Stradale tearing down a winding mountain road at breakneck speed. The car is captured mid-drift, tires smoking, with the asphalt blurred beneath it to emphasize the velocity. Jagged, snow-capped peaks tower in the background, their majestic scale contrasting with the car's aggressive stance. The sky is a vibrant gradient of orange and purple hues, indicating either sunrise or sunset, casting long, dramatic shadows across the road and mountains. Sunlight glints off the car's polished surface, highlighting its aerodynamic curves. The surrounding landscape features a mix of evergreen forests and rocky terrain. Capture the raw power and adrenaline of the race with a shallow depth of field, focusing sharply on the car while blurring the background for a sense of motion. Add subtle dust particles kicked up by the tires and a slight heat haze rising from the engine. The overall mood is exhilarating and awe-inspiring, conveying the thrill of high-speed driving in a stunning natural environment. Render in photorealistic detail with 8K resolution.\n")], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.27206909109693056, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=218, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=218)], prompt_token_count=1417, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1417)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1635, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a sleek, crimson red Ferrari SF90 Stradale tearing down a winding mountain road at breakneck speed. The car is captured mid-drift, tires smoking, with the asphalt blurred beneath it to emphasize the velocity. Jagged, snow-capped peaks tower in the background, their majestic scale contrasting with the car's aggressive stance. The sky is a vibrant gradient of orange and purple hues, indicating either sunrise or sunset, casting long, dramatic shadows across the road and mountains. Sunlight glints off the car's polished surface, highlighting its aerodynamic curves. The surrounding landscape features a mix of evergreen forests and rocky terrain. Capture the raw power and adrenaline of the race with a shallow depth of field, focusing sharply on the car while blurring the background for a sense of motion. Add subtle dust particles kicked up by the tires and a slight heat haze rising from the engine. The overall mood is exhilarating and awe-inspiring, conveying the thrill of high-speed driving in a stunning natural environment. Render in photorealistic detail with 8K resolution.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:53:07
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text='A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a sharp bend, kicking up dust and small rocks. Jagged, snow-capped mountains loom in the background, their peaks piercing the clear, azure sky. The sun, low on the horizon, casts long, dramatic shadows across the winding asphalt track. Other race cars, blurred with motion, chase closely behind, their headlights cutting through the dust cloud. The air crackles with energy and the roar of engines echoes off the mountain walls. Include details like sponsor logos on the cars, trackside barriers, and spectators cheering from elevated vantage points. The overall mood is exhilarating and intense, capturing the thrill of high-stakes racing in a stunning natural environment. Render in photorealistic detail with vibrant colors and dynamic lighting.\n')], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.25671567969559306, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=181, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=181)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1597, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a sharp bend, kicking up dust and small rocks. Jagged, snow-capped mountains loom in the background, their peaks piercing the clear, azure sky. The sun, low on the horizon, casts long, dramatic shadows across the winding asphalt track. Other race cars, blurred with motion, chase closely behind, their headlights cutting through the dust cloud. The air crackles with energy and the roar of engines echoes off the mountain walls. Include details like sponsor logos on the cars, trackside barriers, and spectators cheering from elevated vantage points. The overall mood is exhilarating and intense, capturing the thrill of high-stakes racing in a stunning natural environment. Render in photorealistic detail with vibrant colors and dynamic lighting.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 10:56:13
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text='A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a hairpin turn, kicking up dust and small rocks. Behind it, two other cars, equally powerful and visually striking, struggle to keep pace, their headlights cutting through the deepening shadows of the mountains. The mountain range in the background is majestic, with snow-capped peaks catching the last rays of sunlight, creating a dramatic contrast with the dark valleys below. The road is a winding ribbon of asphalt, hugging the contours of the mountainside. The air is filled with the roar of engines and the screech of tires. Include motion blur to emphasize the speed and intensity of the race. The overall mood is exhilarating and awe-inspiring, capturing the thrill of high-stakes competition against a stunning natural backdrop. Use a wide-angle lens to emphasize the scale of the mountains and the speed of the cars. Aim for photorealistic rendering with vibrant colors and sharp details.\n')], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.23557023599114216, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=213, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=213)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1629, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, cinematic shot of a high-speed car race winding through a mountain pass at golden hour. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a hairpin turn, kicking up dust and small rocks. Behind it, two other cars, equally powerful and visually striking, struggle to keep pace, their headlights cutting through the deepening shadows of the mountains. The mountain range in the background is majestic, with snow-capped peaks catching the last rays of sunlight, creating a dramatic contrast with the dark valleys below. The road is a winding ribbon of asphalt, hugging the contours of the mountainside. The air is filled with the roar of engines and the screech of tires. Include motion blur to emphasize the speed and intensity of the race. The overall mood is exhilarating and awe-inspiring, capturing the thrill of high-stakes competition against a stunning natural backdrop. Use a wide-angle lens to emphasize the scale of the mountains and the speed of the cars. Aim for photorealistic rendering with vibrant colors and sharp details.
+
+==================================================
+
+
+==================================================
+TIMESTAMP: 2025-12-09 11:38:19
+==================================================
+
+--- Formatted Prompt Sent to LLM ---
+You are a creative image generation assistant. Enhance the following user request into a detailed and vivid image generation prompt. User request: 'car racing near the mountains'
+Examples:
+- ['Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:\n\n### Character Overview\nName: [E.g. “Aria Vance”]\nCodename: [E.g. “Echo-9”]\nGender: Female\nType: Augmented Human - Replicant - Cyborg Operative\n\n### Visual Appearance & Augmentations\n- Build & Silhouette: Athletic yet sleek, angular shoulders tapering to narrow waist, long legs.\n- Skin & Surface: Synthetic dermal layers—matte grey or pale olive—with subtle circuit-trace tattoos that glow when active. Occasional exposed carbon-fiber plating beneath tears in clothing.\n- Hair: Shaved undercut on one side, long iridescent strands on the other—neon pink fading to electric blue, slight wet-look sheen.\n- Cyberware: \n    - Ocular Implants: One or two glowing iris lenses (cyan, magenta) with animated HUD overlays \n    - Neural Port: Shiny metal junction behind right ear, pulsating light when in use \n    - Subdermal Fiber-Optic Veins: Faint neon veins coursing from neck into arms \n    - Limb Augment: Left forearm replaced with modular tool-arm, retractable wrist-blade slot\n\n### Outfit & Gear\n- Jacket: Oversized, studded leather coat with integrated holo-display on sleeve\n- Undersuit: Matte black nano-fiber bodysuit with Reflective piping along seams\n- Accessories: High-collar mask (down position), thinned VR-visors flipped up on head, utility belt with neon-lit pouches\n- Footwear: Heavy tread combat boots with micro-thruster vents\n\n### Pose & Expression\n- Camera Angle: Low 3/4 view looking up—emphasizes dominance and scale\n- Stance: One foot on neon-lit grate, weight shifted forward, right hand brushing edge of coat, left arm slightly raised showing tool-arm detail\n- Expression: Cool, steely gaze—lips parted as if about to speak, one eyebrow arched\n- Motion Cue: Holo-particles drifting off her neural port, faint mist swirling around feet\n\n### Environment & Context\n- Setting: Rain-slicked back-alley street at night, towering holographic billboards in Kanji and English\n- Background Details: Flying cars leaving light trails overhead, steam vents from vents, scattered neon graffiti with corporate logos\n- Interaction Elements: Small drone hovering nearby projecting a data-feed; puddles reflecting neon signage\n\n### Lighting & Rendering\n- Key Light: Strong magenta rim light from left billboard\n- Fill Light: Cool cyan glow from ground-level neon panels\n- Atmospherics: Volumetric rain streaks, subtle fog, wet reflective surfaces\n- Shadows & SSS: Crisp shadows under brow; moderate subsurface scattering for synthetic skin edges\n- Style: Cinematic 3D concept art—ultra-sharp details, film-grain minimal, 8K render quality\n\n### Composition & Output\n- Aspect Ratio: 16:9 Landscape (1536x1024 px) OR Portrait (1024x1536 px)\n- Framing: Character positioned right of center, clear neon-haze negative space on left for title or logo\n- Export: High-res PNG, include separate alpha layer for background compositing\n- No watermarks or text\n\n### User-Provided Overrides (fill before generation)\n- Exact character name/codename and any back-story keywords\n- Preferred neon hue hex codes or branded color tokens\n- Choice of augment types (more cyberware vs. minimal)\n- Desired mood tweak (e.g. “more brooding” vs. “alert and ready”)\n- Final resolution/aspect ratio\n- Any logo or watermark placeholder details \n']
+- Render an eye-catching YouTube thumbnail for this video:
+
+Header Text (Main Title):
+
+Text: “[Your Video Title Here]”
+Style: Bold, uppercase sans-serif with thick contrasting outline or drop shadow
+Placement: Top third of the frame, centered or slightly off-center
+Body Text (Subtitle or Hook):
+
+Text: “[Your Hook or Subtitle Here]”
+Style: Italic or condensed, bright accent color with subtle glow
+Placement: Lower third, aligned left or right
+Visual Theme & Genre:
+
+Topic: [e.g., “Tech Review,” “Cooking Tutorial,” “Gaming Highlights”]
+Mood: [e.g., “Energetic,” “Cozy,” “Dramatic”]
+Graphic Style: [e.g., “Photorealistic with pop-art overlays,” “Flat vector icons with drop shadows”]
+Focal Subject(s):
+
+Subject: [e.g., “Host's face,” “Close-up of laptop,” “Cartoon avatar”]
+Expression/Pose: [e.g., “Surprised, mouth open,” “Pointing at screen,” “Holding spatula”]
+Attire/Props: [e.g., “Casual hoodie,” “Chef's hat,” “Gaming headset”]
+Background & Composition:
+
+Background: [e.g., “Blurred studio setup,” “Bright kitchen,” “Futuristic neon grid”]
+Depth: Subtle bokeh or radial gradient behind subject to boost pop
+Framing: Rule of thirds—subject off-center, text in clear negative space
+Color Palette:
+
+Base Colors: [e.g., “Electric blue, neon green”]
+Accent Colors: [e.g., “Bright yellow for callouts, red for urgency”]
+Contrast: High contrast between text and background for legibility
+Additional Graphic Elements:
+
+Icons or Emojis: [e.g., “Fire emoji,” “Lightning bolt,” “Arrow pointing at subject”]
+Overlays: [e.g., “Light leaks,” “Halftone dots,” “Comic-style speed lines”]
+Branding: [e.g., “Channel logo in top-right corner,” “Subscribe button badge”]
+Rendering Details:
+
+Finish: Sharp details, over-saturated colors for maximum click rate
+Style Blend: Photorealism + subtle cartoon exaggeration
+User-Provided Details (fill these in before generating):
+
+- Exact title and subtitle text
+- Host's appearance or avatar reference
+- Any mandatory logos or watermarks
+- Preferred font names or style references
+- Specific props or background keywords
+
+Return ONLY the enhanced prompt string.
+
+--- Raw LLM Response Object ---
+candidates=[Candidate(content=Content(parts=[Part(video_metadata=None, thought=None, inline_data=None, file_data=None, code_execution_result=None, executable_code=None, function_call=None, function_response=None, text='A breathtaking, dynamic shot of a high-speed car race winding through a mountain pass. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a hairpin turn, kicking up dust and small rocks. Jagged, snow-capped peaks tower in the background, their majesty contrasting with the raw power of the race. The sky is a dramatic mix of sunset hues - fiery oranges, deep purples, and hints of electric blue. Sunlight glints off the polished surfaces of the cars, creating streaks of light. Other race cars, each with unique designs and color schemes, follow closely behind, their headlights cutting through the fading light. The road is a winding ribbon of asphalt, hugging the contours of the mountainside. Spectators line the edges of the road in designated viewing areas, blurred with motion, their faces lit by the excitement of the race. Add motion blur to the cars and background to emphasize the speed. The overall atmosphere is one of adrenaline, competition, and stunning natural beauty. Render in a photorealistic style with a wide-angle lens to capture the scale of the landscape and the intensity of the race.\n')], role='model'), citation_metadata=None, finish_message=None, token_count=None, finish_reason=<FinishReason.STOP: 'STOP'>, url_context_metadata=None, avg_logprobs=-0.2788664199763613, grounding_metadata=None, index=None, logprobs_result=None, safety_ratings=None)] create_time=None response_id=None model_version='gemini-2.0-flash-001' prompt_feedback=None usage_metadata=GenerateContentResponseUsageMetadata(cache_tokens_details=None, cached_content_token_count=None, candidates_token_count=233, candidates_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=233)], prompt_token_count=1416, prompt_tokens_details=[ModalityTokenCount(modality=<MediaModality.TEXT: 'TEXT'>, token_count=1416)], thoughts_token_count=None, tool_use_prompt_token_count=None, tool_use_prompt_tokens_details=None, total_token_count=1649, traffic_type=None) automatic_function_calling_history=[] parsed=None
+
+--- Final Enhanced Prompt String Used ---
+A breathtaking, dynamic shot of a high-speed car race winding through a mountain pass. The lead car, a sleek, futuristic sports car with glowing neon underlights, drifts aggressively around a hairpin turn, kicking up dust and small rocks. Jagged, snow-capped peaks tower in the background, their majesty contrasting with the raw power of the race. The sky is a dramatic mix of sunset hues - fiery oranges, deep purples, and hints of electric blue. Sunlight glints off the polished surfaces of the cars, creating streaks of light. Other race cars, each with unique designs and color schemes, follow closely behind, their headlights cutting through the fading light. The road is a winding ribbon of asphalt, hugging the contours of the mountainside. Spectators line the edges of the road in designated viewing areas, blurred with motion, their faces lit by the excitement of the race. Add motion blur to the cars and background to emphasize the speed. The overall atmosphere is one of adrenaline, competition, and stunning natural beauty. Render in a photorealistic style with a wide-angle lens to capture the scale of the landscape and the intensity of the race.
+
+==================================================
