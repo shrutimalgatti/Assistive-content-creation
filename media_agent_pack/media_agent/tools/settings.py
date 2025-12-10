@@ -1,28 +1,20 @@
-import os
-from dotenv import load_dotenv
 import logging
 import sys
+from utils import configs
 
-load_dotenv()
-
-LOGGING_LEVEL = os.getenv("LOGGING_LEVEL", "INFO").upper()
-DETAILED_FRAMEWORK_LOGGING = os.getenv("DETAILED_FRAMEWORK_LOGGING", "False").lower() == "true"
-
-SAVE_IMAGES_LOCALLY: bool = True
-LOCAL_IMAGE_SAVE_PATH: str = "local_image_results"
-
-SAVE_PROMPT_TO_FILE: bool = True
-
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-
-
-if not GOOGLE_API_KEY:
+# For convenience, we can re-export the configs from here so other tool
+# files can continue to import from `settings` if they need to.
+GOOGLE_API_KEY = configs.GOOGLE_API_KEY
+SAVE_PROMPT_TO_FILE = configs.SAVE_PROMPT_TO_FILE
+SAVE_LOCALLY = configs.SAVE_LOCALLY
+LOCAL_SAVE_PATH = configs.LOCAL_SAVE_PATH
+if not configs.GOOGLE_API_KEY:
     print("Warning: GOOGLE_API_KEY not found in environment variables.")
 
 def setup_logging():
 
-    root_logger = logging.getLogger()
-    root_logger.setLevel(LOGGING_LEVEL)
+    root_logger = logging.getLogger() 
+    root_logger.setLevel(configs.LOGGING_LEVEL)
 
     for handler in root_logger.handlers[:]:
         root_logger.removeHandler(handler)
@@ -35,7 +27,7 @@ def setup_logging():
 
     root_logger.addHandler(handler)
 
-    if not DETAILED_FRAMEWORK_LOGGING:
+    if not configs.DETAILED_FRAMEWORK_LOGGING:
         noisy_loggers = [
             "google.adk",
             "google.generativeai",
@@ -49,4 +41,4 @@ def setup_logging():
         logging.getLogger("google_genai.types").setLevel(logging.ERROR)
         logging.info("Set logger 'google_genai.types' to ERROR level.")
 
-    logging.info(f"Logging configured. Base level: {LOGGING_LEVEL}, Detailed framework logs: {DETAILED_FRAMEWORK_LOGGING}")
+    logging.info(f"Logging configured. Base level: {configs.LOGGING_LEVEL}, Detailed framework logs: {configs.DETAILED_FRAMEWORK_LOGGING}")

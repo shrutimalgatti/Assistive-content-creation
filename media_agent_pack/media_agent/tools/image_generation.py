@@ -1,18 +1,22 @@
-from datetime import datetime
+import base64
 import logging
 import os
 import pathlib
-from typing import Dict, Any, List, Optional
-import base64
 import uuid
-from google.genai import types 
-from google import genai
-from PIL import Image
+from datetime import datetime
 from io import BytesIO
-from . import settings
-from google.adk.tools import ToolContext, FunctionTool, BaseTool
+from typing import Any, Dict, List, Optional
+
+from google import genai
 from google.adk.agents.callback_context import CallbackContext
-from . import image_prompt_examples
+from google.adk.tools import BaseTool, FunctionTool, ToolContext
+from google.genai import types
+from PIL import Image
+
+from . import image_prompt_examples, settings
+
+
+# This is a helper function for decoding base64 strings.
 def _decode_b64_str(s: str) -> bytes:
     if isinstance(s, str) and s.startswith("data:"):
         parts = s.split(",", 1)
@@ -149,9 +153,9 @@ async def _image_save_func(image_bytes: bytes, file_extension: str, tool_context
     mime_type = f"image/{file_extension.lstrip('.')}" if file_extension else "image/png"
 
     filename = f"generated_image_{uuid.uuid4()}{file_extension if file_extension else '.png'}" 
-
-    if settings.SAVE_IMAGES_LOCALLY:
-        save_dir = settings.LOCAL_IMAGE_SAVE_PATH
+    local_path = None # Initialize local_path to None
+    if settings.SAVE_LOCALLY:
+        save_dir = settings.LOCAL_SAVE_PATH
         try:
             os.makedirs(save_dir, exist_ok=True)
             local_path = os.path.join(save_dir, filename) 
@@ -163,10 +167,10 @@ async def _image_save_func(image_bytes: bytes, file_extension: str, tool_context
         except Exception as e:
             logger.warning(f"Local file save failed (path: {save_dir}): {e}", exc_info=False)
     else:
-        logger.debug("Local image saving skipped (SAVE_IMAGES_LOCALLY is False).")
+        logger.debug("Local image saving skipped (SAVE_LOCALLY is False).")
 
     artifact_version = None
-    local_path_if_saved = local_path if settings.SAVE_IMAGES_LOCALLY and 'local_path' in locals() else None
+    local_path_if_saved = local_path if settings.SAVE_LOCALLY and local_path else None
     try:
         logger.info(f"Saving {len(image_bytes)} bytes as ADK artifact (name: {filename}, mime: {mime_type})")
         artifact_part = types.Part(inline_data=types.Blob(data=image_bytes, mime_type=mime_type))

@@ -1,12 +1,21 @@
+
+# Import logging
 import logging
+import base64
+
+# Import google libs
 from google.adk.agents import Agent
 from google.adk.agents.callback_context import CallbackContext
-import base64
+
 
 # Import your sub-agents
 from .sub_agents.image_agent.agent import image_agent
 from .sub_agents.audio_agent.agent import audio_agent 
 from .sub_agents.text_agent.agent import text_agent
+
+# Import utils and config
+from utils import configs
+
 
 logger = logging.getLogger(__name__)
 
@@ -108,7 +117,7 @@ def _save_uploaded_image_to_state(callback_context: CallbackContext):
 # --- The rest of your agent.py file remains unchanged ---
 root_agent = Agent(
     name="root_agent",
-    model="gemini-2.0-flash-001",
+    model=configs.ROOT_MODEL_NAME,
     description="Routes requests to specialized sub-agents for images, audio, or text.",
     instruction=(
         "You are the main router agent. Your job is to delegate the user's request "

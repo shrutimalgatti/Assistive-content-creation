@@ -17,8 +17,8 @@ async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> dic
     filename = f"generated_audio_{uuid.uuid4()}{file_extension}"
 
     # Save locally if enabled in settings
-    if settings.SAVE_IMAGES_LOCALLY: # We can reuse this setting for audio
-        save_dir = settings.LOCAL_IMAGE_SAVE_PATH # And this path
+    if settings.SAVE_LOCALLY:
+        save_dir = settings.LOCAL_SAVE_PATH
         try:
             os.makedirs(save_dir, exist_ok=True)
             local_path = os.path.join(save_dir, filename)
