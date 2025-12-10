@@ -2,12 +2,14 @@ import logging
 import sys
 from utils import configs
 
+
 # For convenience, we can re-export the configs from here so other tool
 # files can continue to import from `settings` if they need to.
 GOOGLE_API_KEY = configs.GOOGLE_API_KEY
 SAVE_PROMPT_TO_FILE = configs.SAVE_PROMPT_TO_FILE
 SAVE_LOCALLY = configs.SAVE_LOCALLY
 LOCAL_SAVE_PATH = configs.LOCAL_SAVE_PATH
+
 if not configs.GOOGLE_API_KEY:
     print("Warning: GOOGLE_API_KEY not found in environment variables.")
 
