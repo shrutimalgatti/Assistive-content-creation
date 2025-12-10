@@ -13,7 +13,7 @@ from google.adk.tools import BaseTool, FunctionTool, ToolContext
 from google.genai import types
 from PIL import Image
 
-from . import image_prompt_examples, settings
+from . import image_prompt_examples, settings, configs
 
 
 # This is a helper function for decoding base64 strings.
@@ -223,7 +223,7 @@ async def _enhance_prompt_for_image_gen(desc: str) -> Optional[str]:
 
         logger.debug("Sending prompt to genai.generate_content...")
         response = client.models.generate_content(
-            model="gemini-2.0-flash-001",
+            model=configs.PROMPT_ENHANCEMENT_MODEL_NAME,
             contents=prompt_text,
             config=types.GenerateContentConfig(
                 temperature=0.3,
@@ -253,7 +253,7 @@ async def _generate_image_with_gemini(desc: str, tool_context: ToolContext) -> D
         client = genai.Client(api_key=settings.GOOGLE_API_KEY)
         
         response = client.models.generate_content(
-            model="gemini-2.5-flash-image", # Use the multimodal image generation model
+            model=configs.IMAGE_TOOL_MODEL_NAME, # Use the multimodal image generation model
             contents=[desc],
         )
 
@@ -330,7 +330,7 @@ async def _edit_image_with_gemini(prompt: str, tool_context: ToolContext, use_ma
         
         logger.debug("Sending image edit request to genai.generate_content...")
         response = client.models.generate_content(
-            model="gemini-2.5-flash-image", # The multimodal image model
+            model=configs.IMAGE_TOOL_MODEL_NAME, # The multimodal image model
             contents=contents,
         )
 
@@ -526,7 +526,7 @@ async def _restyle_image_with_gemini(style_description: str, tool_context: ToolC
         
         logger.debug("Sending image restyle request to genai.generate_content...")
         response = client.models.generate_content(
-            model="gemini-2.5-flash-image",
+            model=configs.IMAGE_TOOL_MODEL_NAME,
             contents=contents,
         )
 
