@@ -1,6 +1,6 @@
 import logging
 import sys
-from utils import configs
+from media_agent.utils import configs
 
 
 # For convenience, we can re-export the configs from here so other tool

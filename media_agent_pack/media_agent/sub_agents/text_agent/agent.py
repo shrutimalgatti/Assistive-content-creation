@@ -1,6 +1,6 @@
 import logging
 from google.adk.agents import Agent
-from utils import configs
+from media_agent.utils import configs
 from ...tools.text_tools import text_restyle_tool
 from .prompt import TEXT_AGENT_INSTR
 

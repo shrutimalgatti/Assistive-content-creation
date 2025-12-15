@@ -13,7 +13,9 @@ from google.adk.tools import BaseTool, FunctionTool, ToolContext
 from google.genai import types
 from PIL import Image
 
-from . import image_prompt_examples, settings, configs
+from . import image_prompt_examples, settings
+
+from media_agent.utils import configs
 
 
 # This is a helper function for decoding base64 strings.

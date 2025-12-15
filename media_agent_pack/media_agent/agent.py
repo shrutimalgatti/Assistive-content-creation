@@ -14,7 +14,7 @@ from .sub_agents.audio_agent.agent import audio_agent
 from .sub_agents.text_agent.agent import text_agent
 
 # Import utils and config
-from utils import configs
+from media_agent.utils import configs
 
 
 logger = logging.getLogger(__name__)
@@ -114,7 +114,6 @@ def _save_uploaded_image_to_state(callback_context: CallbackContext):
     logger.info("--- Exiting _save_uploaded_image_to_state callback ---")
 
 
-# --- The rest of your agent.py file remains unchanged ---
 root_agent = Agent(
     name="root_agent",
     model=configs.ROOT_MODEL_NAME,

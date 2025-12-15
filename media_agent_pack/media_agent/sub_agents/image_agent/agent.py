@@ -1,9 +1,10 @@
 import logging
 from google.adk.agents import Agent
-from utils import configs
+from media_agent.utils import configs
 
 from ...tools.image_generation import (
-    prompt_enhance_tool,
+    ## prompt_enhance_tool,
+    _enhance_prompt_for_image_gen,
     gemini_image_generation_tool,
     gemini_image_restyle_tool,
     gemini_image_edit_tool,
@@ -20,7 +21,8 @@ image_agent = Agent(
     description="Handles all user requests related to image generation, editing, and re-styling.",
     instruction=IMAGE_AGENT_INSTR,
     tools=[
-        prompt_enhance_tool,
+        ## prompt_enhance_tool,
+        _enhance_prompt_for_image_gen,
         gemini_image_generation_tool,
         gemini_image_restyle_tool,
         gemini_image_edit_tool,

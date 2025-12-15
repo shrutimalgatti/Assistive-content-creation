@@ -4,14 +4,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-ROOT_MODEL_NAME = "gemini-1.5-pro-latest"
-IMAGE_AGENT_MODEL_NAME = "gemini-1.5-pro-latest"
-AUDIO_AGENT_MODEL_NAME = "gemini-1.5-pro-latest"
-TEXT_AGENT_MODEL_NAME = "gemini-1.5-pro-latest"
+ROOT_MODEL_NAME = "gemini-2.5-pro"
+IMAGE_AGENT_MODEL_NAME = "gemini-2.5-pro"
+AUDIO_AGENT_MODEL_NAME = "gemini-2.5-pro"
+TEXT_AGENT_MODEL_NAME = "gemini-2.5-pro"
 
 # Models for tools
 IMAGE_TOOL_MODEL_NAME = "gemini-2.5-flash-image"
-PROMPT_ENHANCEMENT_MODEL_NAME = "gemini-1.5-flash-latest"
+PROMPT_ENHANCEMENT_MODEL_NAME = "gemini-2.5-pro"
 
 LOGGING_LEVEL = os.getenv("LOGGING_LEVEL", "INFO").upper()
 DETAILED_FRAMEWORK_LOGGING = os.getenv("DETAILED_FRAMEWORK_LOGGING", "False").lower() == "true"

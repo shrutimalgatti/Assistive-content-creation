@@ -1,6 +1,6 @@
 import logging
 from google.adk.agents import Agent
-from utils import configs
+from media_agent.utils import configs
 from ...tools.text_to_speech_tool import text_to_speech_tool
 from .prompt import AUDIO_AGENT_INSTR
 
