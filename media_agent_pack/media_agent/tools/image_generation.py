@@ -1,18 +1,24 @@
-from datetime import datetime
+import base64
 import logging
 import os
 import pathlib
-from typing import Dict, Any, List, Optional
-import base64
 import uuid
-from google.genai import types 
-from google import genai
-from PIL import Image
+from datetime import datetime
 from io import BytesIO
-from . import settings
-from google.adk.tools import ToolContext, FunctionTool, BaseTool
+from typing import Any, Dict, List, Optional
+
+from google import genai
 from google.adk.agents.callback_context import CallbackContext
-from . import image_prompt_examples
+from google.adk.tools import BaseTool, FunctionTool, ToolContext
+from google.genai import types
+from PIL import Image
+
+from . import image_prompt_examples, settings
+
+from media_agent.utils import configs
+
+
+# This is a helper function for decoding base64 strings.
 def _decode_b64_str(s: str) -> bytes:
     if isinstance(s, str) and s.startswith("data:"):
         parts = s.split(",", 1)
@@ -141,17 +147,30 @@ async def _save_uploaded_image_to_state_callback(callback_context: CallbackConte
 save_uploaded_image_to_state_tool = FunctionTool(func=_save_uploaded_image_to_state_callback) 
 
 
-async def _image_save_func(image_bytes: bytes, file_extension: str, tool_context: ToolContext) -> Dict[str, Any]:
+async def _image_save_func(
+    image_bytes: bytes,
+    tool_context: ToolContext,
+    suffix: str = "",
+    ext: str = "png",
+) -> Dict[str, Any]:
+    """Persist generated image bytes as an ADK artifact (and optionally to disk).
+
+    Args:
+        image_bytes: Raw encoded image data.
+        tool_context: ADK tool context used to save the artifact.
+        suffix: Optional tag appended to the filename stem, e.g. "edited".
+        ext: File extension *without* a leading dot; also determines the MIME type.
+    """
     logger.debug("Entering _image_save_func (artifact save version)...")
 
-    if file_extension and not file_extension.startswith('.'):
-        file_extension = '.' + file_extension
-    mime_type = f"image/{file_extension.lstrip('.')}" if file_extension else "image/png"
+    ext = ext.lstrip(".").lower() or "png"
+    mime_type = f"image/{'jpeg' if ext == 'jpg' else ext}"
 
-    filename = f"generated_image_{uuid.uuid4()}{file_extension if file_extension else '.png'}" 
-
-    if settings.SAVE_IMAGES_LOCALLY:
-        save_dir = settings.LOCAL_IMAGE_SAVE_PATH
+    tag = f"_{suffix.strip('_')}" if suffix else ""
+    filename = f"generated_image_{uuid.uuid4()}{tag}.{ext}"
+    local_path = None # Initialize local_path to None
+    if settings.SAVE_LOCALLY:
+        save_dir = settings.LOCAL_SAVE_PATH
         try:
             os.makedirs(save_dir, exist_ok=True)
             local_path = os.path.join(save_dir, filename) 
@@ -163,10 +182,10 @@ async def _image_save_func(image_bytes: bytes, file_extension: str, tool_context
         except Exception as e:
             logger.warning(f"Local file save failed (path: {save_dir}): {e}", exc_info=False)
     else:
-        logger.debug("Local image saving skipped (SAVE_IMAGES_LOCALLY is False).")
+        logger.debug("Local image saving skipped (SAVE_LOCALLY is False).")
 
     artifact_version = None
-    local_path_if_saved = local_path if settings.SAVE_IMAGES_LOCALLY and 'local_path' in locals() else None
+    local_path_if_saved = local_path if settings.SAVE_LOCALLY and local_path else None
     try:
         logger.info(f"Saving {len(image_bytes)} bytes as ADK artifact (name: {filename}, mime: {mime_type})")
         artifact_part = types.Part(inline_data=types.Blob(data=image_bytes, mime_type=mime_type))
@@ -212,14 +231,14 @@ async def _enhance_prompt_for_image_gen(desc: str) -> Optional[str]:
             "You are a creative image generation assistant. Enhance the following user request "
             f"into a detailed and vivid image generation prompt. User request: '{desc}'\n"
             "Examples:\n"
-            f"- {image_prompt_examples.ENHANCE_PROMPT_CHARACTER[0]}\n"
-            f"- {image_prompt_examples.ENHANCE_PROMPT_YOUTUBE_THUMBNAIL[0]}\n"
+            f"- {image_prompt_examples.ENHANCE_PROMPT_CHARACTER}\n"
+            f"- {image_prompt_examples.ENHANCE_PROMPT_YOUTUBE_THUMBNAIL}\n"
             "Return ONLY the enhanced prompt string."
         )
 
         logger.debug("Sending prompt to genai.generate_content...")
-        response = client.models.generate_content(
-            model="gemini-2.0-flash-001",
+        response = await client.aio.models.generate_content(
+            model=configs.PROMPT_ENHANCEMENT_MODEL_NAME,
             contents=prompt_text,
             config=types.GenerateContentConfig(
                 temperature=0.3,
@@ -248,8 +267,8 @@ async def _generate_image_with_gemini(desc: str, tool_context: ToolContext) -> D
     try:
         client = genai.Client(api_key=settings.GOOGLE_API_KEY)
         
-        response = client.models.generate_content(
-            model="gemini-2.5-flash-image", # Use the multimodal image generation model
+        response = await client.aio.models.generate_content(
+            model=configs.IMAGE_TOOL_MODEL_NAME, # Use the multimodal image generation model
             contents=[desc],
         )
 
@@ -272,7 +291,7 @@ async def _generate_image_with_gemini(desc: str, tool_context: ToolContext) -> D
             logger.error(f"Gemini image generation failed: No image data in response parts. Raw response: {response}")
             return {"error": "Image generation failed: No image data returned from Gemini."}
 
-        artifact_result = await _image_save_func(generated_data_bytes, ".png", tool_context)
+        artifact_result = await _image_save_func(generated_data_bytes, tool_context)
         
         logger.info(f"Gemini Generate artifact save result keys: {artifact_result.keys()}")
         if "error" in artifact_result or "artifact_error" in artifact_result:
@@ -325,8 +344,8 @@ async def _edit_image_with_gemini(prompt: str, tool_context: ToolContext, use_ma
         client = genai.Client(api_key=settings.GOOGLE_API_KEY)
         
         logger.debug("Sending image edit request to genai.generate_content...")
-        response = client.models.generate_content(
-            model="gemini-2.5-flash-image", # The multimodal image model
+        response = await client.aio.models.generate_content(
+            model=configs.IMAGE_TOOL_MODEL_NAME, # The multimodal image model
             contents=contents,
         )
 
@@ -345,7 +364,7 @@ async def _edit_image_with_gemini(prompt: str, tool_context: ToolContext, use_ma
             logger.error("Gemini image editing failed: No image data in response parts.")
             return {"error": "Image editing failed: No image data returned from Gemini."}
 
-        artifact_result = await _image_save_func(generated_data_bytes, "_edited.png", tool_context)
+        artifact_result = await _image_save_func(generated_data_bytes, tool_context, suffix="edited")
         
         logger.info(f"Edit artifact save result keys: {artifact_result.keys()}")
 
@@ -362,80 +381,30 @@ async def _edit_image_with_gemini(prompt: str, tool_context: ToolContext, use_ma
 
 gemini_image_edit_tool = FunctionTool(func=_edit_image_with_gemini)
 
-def _save_image_artifact_to_state(filename: str, version: int, tool_context: ToolContext) -> Dict[str, str]:
+async def _save_image_artifact_to_state(filename: str, version: int, tool_context: ToolContext) -> Dict[str, str]:
+    """Load a previously saved image artifact back into session state for further editing."""
     logger.info(f"--- Entering _save_image_artifact_to_state for {filename} v{version} ---")
     state = tool_context.state
 
     try:
         logger.debug(f"Attempting to load artifact: {filename} v{version}")
-        # The tool_context.load_artifact returns a single Part object
-        artifact_part = tool_context.load_artifact(filename, version=version)
+        # load_artifact is a coroutine; it resolves to a types.Part (or None).
+        artifact_part = await tool_context.load_artifact(filename, version=version)
 
         if not artifact_part:
             logger.error(f"Artifact {filename} v{version} not found.")
             return {"error": f"Artifact {filename} v{version} not found."}
-        
-        # --- ROBUST DATA EXTRACTION LOGIC ---
-        image_bytes = None
-        mime_type = "image/png" # Default in case metadata is missing
 
-        # Helper function for recursive search
-        def recursive_find_bytes(obj):
-            if isinstance(obj, (bytes, bytearray)):
-                return obj
-            if isinstance(obj, dict):
-                for key, val in obj.items():
-                    if key in ('data', 'bytes'):
-                        if isinstance(val, (bytes, bytearray)): return val
-                    result = recursive_find_bytes(val)
-                    if result is not None: return result
-            elif hasattr(obj, '__dict__'):
-                for key, val in obj.__dict__.items():
-                    if key in ('data', 'bytes'):
-                        if isinstance(val, (bytes, bytearray)): return val
-                    result = recursive_find_bytes(val)
-                    if result is not None: return result
-            elif isinstance(obj, list) or isinstance(obj, tuple):
-                 for val in obj:
-                    result = recursive_find_bytes(val)
-                    if result is not None: return result
-            return None
-
-        # Attempt 1: Standard Part structure check (types.Part object)
-        if hasattr(artifact_part, 'inline_data') and hasattr(artifact_part.inline_data, 'data'):
-             image_bytes = artifact_part.inline_data.data
-             mime_type = artifact_part.inline_data.mime_type
-             logger.debug("Successfully extracted data via standard types.Part structure.")
-        
-        # Attempt 2: If it's a simple dictionary (e.g., loaded from a wrapper)
-        elif isinstance(artifact_part, dict) and 'data' in artifact_part:
-            image_bytes = artifact_part['data']
-            mime_type = artifact_part.get('mime_type', 'image/png')
-            logger.debug("Successfully extracted data via dictionary check.")
-        
-        # Attempt 3: Check for direct 'data' attribute (last resort for ADK object weirdness)
-        elif hasattr(artifact_part, 'data') and isinstance(getattr(artifact_part, 'data'), (bytes, bytearray)):
-             image_bytes = artifact_part.data
-             # Try to get mime_type from attributes/keys, default to png
-             mime_type = getattr(artifact_part, 'mime_type', artifact_part.get('mime_type', 'image/png'))
-             logger.debug("Successfully extracted data via direct data attribute check.")
-
-        # Attempt 4: FINAL fail-safe deep attribute check for raw data
-        if not image_bytes:
-            image_bytes = recursive_find_bytes(artifact_part)
-            if image_bytes:
-                 logger.debug("Successfully extracted data via FINAL recursive deep attribute check.")
-            
-        # Attempt 5: Logging full object structure if all else fails
-        if not image_bytes:
-             logger.error(f"Artifact {filename} v{version} failed all data extraction attempts. Object type: {type(artifact_part)}, Content (truncated): {str(artifact_part)[:200]}...")
-
+        inline_data = getattr(artifact_part, "inline_data", None)
+        image_bytes = getattr(inline_data, "data", None) if inline_data else None
+        mime_type = getattr(inline_data, "mime_type", None) or "image/png"
 
         if not image_bytes:
-            logger.error(f"Artifact {filename} v{version} has invalid data structure. Could not find image bytes.")
+            logger.error(
+                f"Artifact {filename} v{version} carries no inline image data "
+                f"(part type: {type(artifact_part).__name__})."
+            )
             return {"error": f"Artifact {filename} v{version} has invalid data structure."}
-        # --- END ROBUST DATA EXTRACTION LOGIC ---
-
 
         logger.debug(f"Loaded artifact data: {len(image_bytes)} bytes, mime: {mime_type}")
 
@@ -521,8 +490,8 @@ async def _restyle_image_with_gemini(style_description: str, tool_context: ToolC
         client = genai.Client(api_key=settings.GOOGLE_API_KEY)
         
         logger.debug("Sending image restyle request to genai.generate_content...")
-        response = client.models.generate_content(
-            model="gemini-2.5-flash-image",
+        response = await client.aio.models.generate_content(
+            model=configs.IMAGE_TOOL_MODEL_NAME,
             contents=contents,
         )
 
@@ -540,7 +509,7 @@ async def _restyle_image_with_gemini(style_description: str, tool_context: ToolC
             return {"error": "Image restyling failed: No image data returned from Gemini."}
 
         # Save the new image as an artifact
-        artifact_result = await _image_save_func(generated_data_bytes, "_restyled.png", tool_context)
+        artifact_result = await _image_save_func(generated_data_bytes, tool_context, suffix="restyled")
         
         return artifact_result
             

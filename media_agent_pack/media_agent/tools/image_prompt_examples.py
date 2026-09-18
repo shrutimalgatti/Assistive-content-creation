@@ -1,5 +1,4 @@
-ENHANCE_PROMPT_CHARACTER = [
-"""Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:
+ENHANCE_PROMPT_CHARACTER = """Render a hyper-realistic, high-detail concept art image of this female character in a neon-soaked cyberpunk world:
 
 ### Character Overview
 Name: [E.g. “Aria Vance”]
@@ -55,10 +54,8 @@ Type: Augmented Human - Replicant - Cyborg Operative
 - Final resolution/aspect ratio
 - Any logo or watermark placeholder details 
 """
-],
 
-ENHANCE_PROMPT_YOUTUBE_THUMBNAIL = [
-"""Render an eye-catching YouTube thumbnail for this video:
+ENHANCE_PROMPT_YOUTUBE_THUMBNAIL = """Render an eye-catching YouTube thumbnail for this video:
 
 Header Text (Main Title):
 
@@ -107,4 +104,3 @@ User-Provided Details (fill these in before generating):
 - Preferred font names or style references
 - Specific props or background keywords
 """
-]

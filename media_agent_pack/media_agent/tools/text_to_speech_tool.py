@@ -1,6 +1,7 @@
 import logging
 import os
 import uuid
+from typing import Any, Dict
 from google.cloud import texttospeech
 from google.adk.tools import ToolContext, FunctionTool
 from google.genai import types
@@ -8,7 +9,7 @@ from . import settings
 
 logger = logging.getLogger(__name__)
 
-async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> dict[str, any]:
+async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> Dict[str, Any]:
     """Saves audio bytes as an ADK artifact and optionally locally."""
     logger.debug("Entering _audio_save_func...")
     
@@ -17,8 +18,8 @@ async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> dic
     filename = f"generated_audio_{uuid.uuid4()}{file_extension}"
 
     # Save locally if enabled in settings
-    if settings.SAVE_IMAGES_LOCALLY: # We can reuse this setting for audio
-        save_dir = settings.LOCAL_IMAGE_SAVE_PATH # And this path
+    if settings.SAVE_LOCALLY:
+        save_dir = settings.LOCAL_SAVE_PATH
         try:
             os.makedirs(save_dir, exist_ok=True)
             local_path = os.path.join(save_dir, filename)
@@ -52,7 +53,7 @@ async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> dic
 
 
 
-async def _generate_audio_from_text(text: str, tool_context: ToolContext, voice_style: str = "neutral") -> dict[str, any]:
+async def _generate_audio_from_text(text: str, tool_context: ToolContext, voice_style: str = "neutral") -> Dict[str, Any]:
     """
     Generates audio from text, applying a specific voice style using supported SSML attributes.
     `voice_style` can be a general description like 'cheerful', 'sad', 'whispering'.
