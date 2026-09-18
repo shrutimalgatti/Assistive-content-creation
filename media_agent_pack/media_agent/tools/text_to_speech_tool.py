@@ -1,6 +1,7 @@
 import logging
 import os
 import uuid
+from typing import Any, Dict
 from google.cloud import texttospeech
 from google.adk.tools import ToolContext, FunctionTool
 from google.genai import types
@@ -8,7 +9,7 @@ from . import settings
 
 logger = logging.getLogger(__name__)
 
-async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> dict[str, any]:
+async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> Dict[str, Any]:
     """Saves audio bytes as an ADK artifact and optionally locally."""
     logger.debug("Entering _audio_save_func...")
     
@@ -52,7 +53,7 @@ async def _audio_save_func(audio_bytes: bytes, tool_context: ToolContext) -> dic
 
 
 
-async def _generate_audio_from_text(text: str, tool_context: ToolContext, voice_style: str = "neutral") -> dict[str, any]:
+async def _generate_audio_from_text(text: str, tool_context: ToolContext, voice_style: str = "neutral") -> Dict[str, Any]:
     """
     Generates audio from text, applying a specific voice style using supported SSML attributes.
     `voice_style` can be a general description like 'cheerful', 'sad', 'whispering'.

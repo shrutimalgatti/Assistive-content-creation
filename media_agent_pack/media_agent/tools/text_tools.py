@@ -3,9 +3,11 @@ from google import genai
 from . import settings
 from google.adk.tools import FunctionTool
 
+from media_agent.utils import configs
+
 logger = logging.getLogger(__name__)
 
-def _restyle_text(original_text: str, style_description: str) -> str:
+async def _restyle_text(original_text: str, style_description: str) -> str:
     """
     Rewrites the original text to match the given style description.
     """
@@ -20,8 +22,8 @@ def _restyle_text(original_text: str, style_description: str) -> str:
             f"**Rewritten Text:**"
         )
 
-        response = client.models.generate_content(
-            model="gemini-2.0-flash-001",
+        response = await client.aio.models.generate_content(
+            model=configs.TEXT_TOOL_MODEL_NAME,
             contents=prompt,
             config=genai.types.GenerateContentConfig(temperature=0.7)
         )
